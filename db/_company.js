@@ -8,4 +8,4 @@ const _companySchema =  new mongoose.Schema({
     map:String
 });
 const CompanySchema = mongoose.model('company',_companySchema);
-module.exports = ComopanySchema;
+module.exports = CompanySchema;

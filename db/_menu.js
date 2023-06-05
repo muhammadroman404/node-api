@@ -1,4 +1,5 @@
 const mongoose =  require('mongoose');
+const Schema = mongoose.Schema
 const _menuSchema = new mongoose.Schema({
   name: String,
   description: String,
