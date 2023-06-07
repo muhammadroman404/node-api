@@ -1,5 +1,6 @@
 const mongodb = require('mongodb');
 require('./config')
+require('./server')
 const admin = require('./db/_company')
 const category = require('./db/_category')
 const menu = require('./db/_menu')
