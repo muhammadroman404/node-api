@@ -6,9 +6,9 @@ const _feedbackSchema = new mongoose.Schema({
   cutomerAddress: String,
   description: String,
   date: String,
-  customer: {
+  user: {
     type: Schema.Types.ObjectId,
-    ref: "Customer",
+    ref: "User",
   },
 });
 const feedbackSchema = mongoose.model("feedback", _feedbackSchema);

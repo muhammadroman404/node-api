@@ -9,9 +9,9 @@ const _orderSchema = new mongoose.Schema({
   orderType: String,
   paymentStatus: String,
   deliveryStatus: String,
-  customer: {
+  user: {
     type: Schema.Types.ObjectId,
-    ref: "Customer",
+    ref: "User",
   },
 });
 const orderSchema = mongoose.model("order", _orderSchema);

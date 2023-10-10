@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const _reservationSchema = new mongoose.Schema({
-  cutomerName: String,
-  cutomerContact: String,
-  cutomerEmail: String,
+  userName: String,
+  userContact: String,
+  userEmail: String,
   persons: String,
-  date: String,
-  customer: {
+  date: Date,
+  user: {
     type: Schema.Types.ObjectId,
-    ref: "Customer",
+    ref: "User",
   },
   timeSlot: {
     type: Schema.Types.ObjectId,
